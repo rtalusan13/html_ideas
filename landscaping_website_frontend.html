@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CHANGE: Update business name and tagline as needed -->
     <title>Evergreen Landscaping | Premium Landscape Design & Maintenance</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* IMPORTANT: Update these colors to match your brand identity */
+        :root {
+            --primary: #2e8555;  /* Main brand green - WCAG AA compliant */
+            --primary-light: #38a169;
+            --primary-dark: #276749;
+            --secondary: #3182ce; /* Complementary blue */
+            --text: #2d3748;      /* Dark gray for text */
+            --text-light: #4a5568;
+            --background: #f7fafc; /* Light background */
+            --white: #ffffff;
+        }
+
         /* Custom animations */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
@@ -18,7 +31,7 @@
         }
         
         .gradient-text {
-            background: linear-gradient(135deg, #22c55e, #15803d);
+            background: linear-gradient(135deg, var(--primary-light), var(--primary-dark));
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -43,8 +56,9 @@
     <nav class="fixed w-full bg-white shadow-md z-50 transition-all duration-300">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center">
-                <i class="fas fa-tree text-emerald-600 text-2xl mr-2"></i>
-                <span class="text-xl font-bold text-gray-800">Evergreen Landscaping</span>
+                <!-- CHANGE: Update logo icon and business name -->
+                <i class="fas fa-tree text-[var(--primary)] text-2xl mr-2"></i>
+                <span class="text-xl font-bold text-[var(--text)]">Evergreen Landscaping</span>
             </div>
             <div class="hidden md:flex space-x-8">
                 <a href="#home" class="text-emerald-600 font-medium">Home</a>
@@ -429,7 +443,11 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- IMPORTANT: Contact Section - Update these for real implementation:
+         - Form needs backend integration
+         - Update address, phone, and email
+         - Consider adding a map embed
+    -->
     <section id="contact" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row">
@@ -500,7 +518,12 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- IMPORTANT: Footer - Update for real implementation:
+         - Add real social media links
+         - Update copyright year automatically
+         - Add real legal pages (Privacy Policy, etc.)
+         - Verify newsletter integration
+    -->
     <footer class="bg-gray-900 text-white pt-12 pb-6">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
@@ -572,6 +595,12 @@
     </footer>
 
     <script>
+        /* IMPORTANT: For production, consider:
+           - Adding form validation
+           - Implementing analytics
+           - Adding error handling
+        */
+        
         // Mobile menu toggle
         document.getElementById('menu-toggle').addEventListener('click', function() {
             const menu = document.getElementById('mobile-menu');
