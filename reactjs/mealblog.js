@@ -58,7 +58,7 @@ const App = () => {
     const stars = [];
     for (let i = 1; i <= 5; i++) {
       stars.push(
-        <span key={i} className={`inline-block w-4 h-4 mr-1 ${i <= rating ? 'text-yellow-500' : 'text-gray-300'}`}>
+        <span key={i} className={`inline-block w-4 h-4 mr-1 ${i <= rating ? 'text-yellow-400' : 'text-gray-300'}`}>
           ★
         </span>
       );
@@ -81,12 +81,13 @@ const App = () => {
               placeholder="Search recipes..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
+              aria-label="Search recipes"
               className="w-full px-4 py-2 rounded-full border-none focus:outline-none focus:ring-2 focus:ring-white"
             />
           </div>
 
           {/* Tabs */}
-          <div className="flex gap-2 mt-6">
+          <nav className="flex gap-2 mt-6" aria-label="Recipe categories">
             {['all', 'breakfast', 'lunch', 'main', 'dessert'].map((tab) => (
               <button
                 key={tab}
@@ -96,21 +97,22 @@ const App = () => {
                     ? 'bg-white text-red-600'
                     : 'bg-red-600 hover:bg-red-700'
                 }`}
+                aria-pressed={activeTab === tab}
               >
                 {tab}
               </button>
             ))}
-          </div>
+          </nav>
         </div>
       </header>
 
       {/* Main Content */}
       <main className="container mx-auto px-4 py-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredMeals.map((meal) => (
             <article
               key={meal.id}
-              className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1"
+              className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
               <img src={meal.image} alt={meal.title} className="w-full h-48 object-cover" />
               <div className="p-6">
@@ -132,7 +134,9 @@ const App = () => {
                 </div>
 
                 <div className="flex items-center">
-                  <div className="flex">{getRatingStars(meal.rating)}</div>
+                  <div className="flex" aria-label={`Rating: ${meal.rating} out of 5 stars`}>
+                    {getRatingStars(meal.rating)}
+                  </div>
                   <span className="ml-2 text-sm text-gray-600">({meal.rating}/5)</span>
                 </div>
               </div>
