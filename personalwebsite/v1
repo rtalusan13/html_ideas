@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raphael B. Talusan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #10b981);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold gradient-text">Raphael B. Talusan</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition-all">About</a>
+                    <a href="#interests" class="text-gray-700 hover:text-blue-600 transition-all">Interests</a>
+                    <a href="#updates" class="text-gray-700 hover:text-blue-600 transition-all">Updates</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-all">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white pb-4 px-4 shadow-md">
+            <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600">About</a>
+            <a href="#interests" class="block py-2 text-gray-700 hover:text-blue-600">Interests</a>
+            <a href="#updates" class="block py-2 text-gray-700 hover:text-blue-600">Updates</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-r from-blue-50 to-emerald-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                        Raphael B. Talusan
+                    </h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mb-6">
+                        Electrical Engineering <span class="gradient-text">@ UIUC '28</span>
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Passionate about Computer Architecture, Hardware Verification, and Embedded Systems.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all shadow-md">
+                            Contact Me
+                        </a>
+                        <a href="#about" class="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-all">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <img src="https://lh4.googleusercontent.com/_YIA_9oySye4Ot9wVa0yjZG8rJG3wiFuk6Ac32L4WBl8XVsoq-vgQDnykykNIBtOs8q8I0-M7QYQ4WGfe8R5e57U7bZ-cAhmF9Jf5spVNDYKmXnWwML-CL7bKUJMuyK6imF-mrBJae1sq2kw_sljqyuy-Mfije-ygNCNICwEy2VM4xXWMtmqcA=w1280" 
+                         alt="Raphael B. Talusan" 
+                         class="rounded-xl shadow-xl w-full h-auto max-h-96 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
+                <span class="gradient-text">About Me</span>
+            </h2>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Sophomore in Electrical Engineering at the University of Illinois at Urbana-Champaign. As a kid, I competed and won several math competitions, fueling my passions for complex problem-solving and higher-level math.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Today, these skills have translated to my education in engineering, where I love learning more about computer systems and the foundations of computing, working with both low-level and high-level understandings through programming and circuit design.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Previously, I graduated from the Illinois Mathematics and Science Academy (IMSA) in Aurora, IL, a nationally-ranked STEM-focused school that guided me in pursuing my academic and personal interests.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Outside of education, my hobbies and fascinations include cooking, games of all kinds (sports, chess, video games, etc.), and self-improvement in various aspects of life. I always grew up with a sense of competition, refining my skills under the guise of "Iron sharpens iron."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
+                My <span class="gradient-text">Interests</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md transition-all card-hover">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-microchip text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Computer Architecture</h3>
+                    <p class="text-gray-600">
+                        Exploring the design and organization of computer systems to optimize performance and efficiency.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md transition-all card-hover">
+                    <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-check-circle text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Hardware Verification</h3>
+                    <p class="text-gray-600">
+                        Ensuring the reliability and correctness of hardware designs through rigorous testing methodologies.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md transition-all card-hover">
+                    <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Embedded Systems</h3>
+                    <p class="text-gray-600">
+                        Developing specialized computing systems that perform dedicated functions within larger systems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Updates Section -->
+    <section id="updates" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
+                Recent <span class="gradient-text">Updates</span>
+            </h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-blue-500">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-blue-100 rounded-full p-2 mr-4">
+                            <i class="fas fa-book-open text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800 mb-1">Summer Classes</h3>
+                            <p class="text-gray-600">Currently undertaking two Summer classes @ Parkland College: MAT200 & PHY142.</p>
+                            <div class="mt-3 flex items-center text-sm text-gray-500">
+                                <i class="far fa-calendar-alt mr-2"></i>
+                                <span>Summer 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gradient-to-r from-blue-50 to-emerald-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
+                Get In <span class="gradient-text">Touch</span>
+            </h2>
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-blue-100 rounded-full p-2 mr-4">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-gray-500">Email</h4>
+                                    <p class="text-gray-700">(University email)</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-green-100 rounded-full p-2 mr-4">
+                                    <i class="fas fa-university text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-gray-500">University</h4>
+                                    <p class="text-gray-700">University of Illinois at Urbana-Champaign</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-purple-100 rounded-full p-2 mr-4">
+                                    <i class="fas fa-graduation-cap text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-gray-500">Education</h4>
+                                    <p class="text-gray-700">Electrical Engineering, Class of 2028</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-6">Send Me a Message</h3>
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all shadow-md">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <span class="text-xl font-bold gradient-text">Raphael B. Talusan</span>
+                    <p class="text-gray-400 mt-2">Electrical Engineering @ UIUC '28</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-all">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-all">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-all">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400 text-sm">
+                <p>&copy; 2023 Raphael B. Talusan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                    
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Form submission (placeholder)
+        const form = document.querySelector('form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Message sent successfully! (This is a demo)');
+                form.reset();
+            });
+        }
+    </script>
+</body>
+</html>
