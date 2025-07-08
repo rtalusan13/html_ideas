@@ -6,7 +6,7 @@ const App = () => {
   // Mock Resume Data
   const resumeData = {
     about: {
-      name: "Alex Johnson",
+      name: "Raphael Talusan",
       title: "Computer Engineering Student | Developer | Innovator",
       summary:
         "Passionate computer engineering student with a strong foundation in software development, embedded systems, and problem-solving. Seeking to apply academic knowledge and practical experience to real-world challenges.",
@@ -61,10 +61,10 @@ const App = () => {
       "Java", "Git", "Tailwind CSS", "Firebase", "Figma", "Linux"
     ],
     contact: {
-      email: "alex.johnson@example.com",
-      phone: "+1 (555) 123-4567",
-      linkedin: "linkedin.com/in/alexjohnson",
-      github: "github.com/alexjohnson",
+      email: "rtalu@illinois.edu",
+      //phone: "+1 (555) 123-4567",
+      linkedin: "linkedin.com/in/raphael-talusan",
+      github: "github.com/rtalusan13",
     },
   };
 
