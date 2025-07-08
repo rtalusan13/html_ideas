@@ -7,28 +7,28 @@ const App = () => {
   const resumeData = {
     about: {
       name: "Raphael Talusan",
-      title: "Computer Engineering Student | Developer | Innovator",
+      title: "Electrical Engineering Student | Developer | Innovator",
       summary:
-        "Passionate computer engineering student with a strong foundation in software development, embedded systems, and problem-solving. Seeking to apply academic knowledge and practical experience to real-world challenges.",
+        "Passionate electrical engineering student with a strong foundation in software development, embedded systems, and problem-solving. Seeking to apply academic knowledge and practical experience to real-world challenges.",
     },
     education: [
       {
-        degree: "B.S. in Computer Engineering",
-        school: "Tech University",
-        year: "2021 - 2025",
-        gpa: "3.9/4.0",
-        honors: "Dean's List (Fall '22, Spring '24)",
+        degree: "B.S. in Electrical Engineering",
+        school: "University of Illinois Urbana-Champaign",
+        year: "2024 - 2028",
+        gpa: "3.95/4.0",
+        honors: "Dean's List (SP 25)",
       },
     ],
     experience: [
       {
-        role: "Software Development Intern",
-        company: "InnovateX Inc.",
-        year: "Summer 2024",
+        role: "Associate Software Development Engineer",
+        company: "APS Data Technologies",
+        year: "Sep 2023 - Apr 2024",
         description:
-          "Developed and maintained web applications using React.js and Node.js. Collaborated with cross-functional teams to deliver scalable solutions for clients.",
+          //"Developed and maintained web applications using React.js and Node.js. Collaborated with cross-functional teams to deliver scalable solutions for clients.",
       },
-      {
+      /*{
         role: "Embedded Systems Research Assistant",
         company: "Tech University Lab",
         year: "2023 - Present",
@@ -54,7 +54,7 @@ const App = () => {
         tech: "Python, TensorFlow, Flask",
         description:
           "Created a machine learning model trained on movie reviews to predict sentiment. Integrated the model into a web app with Flask backend.",
-      },
+      },*/
     ],
     skills: [
       "JavaScript", "TypeScript", "React", "Node.js", "Python", "C/C++", 
